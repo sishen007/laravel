@@ -1,0 +1,1 @@
+version 0.1  简单熟悉流程MVC,搭建一个小的博客:refer:https://github.com/johnlui/Learn-Laravel-5
