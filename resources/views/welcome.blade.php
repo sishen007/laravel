@@ -93,6 +93,22 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+            {{--@component('alert')--}}
+                {{--<strong>Whoops!</strong> Something went wrong!--}}
+            {{--@endcomponent--}}
+            {{--组件和插槽示例--}}
+            @component('alert')
+                @slot('title')
+                    Forbidden
+                @endslot
+                You are not allowed to access this resource!
+            @endcomponent
+
+                {{--//视图间共享数据--}}
+                {{$sitename}}
+            {{--composer--}}
+            {{--{{$user['name']}}--}}
+            {{$testss}}
         </div>
     </body>
 </html>
