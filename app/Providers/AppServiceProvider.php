@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\DB;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,6 +21,11 @@ class AppServiceProvider extends ServiceProvider
 //        view()->composer('welcome',function($view){
 //            $view->with('user',array('name'=>'test','avatar'=>'/path/to/test.jpg'));
 //        });
+        // 监听查询事件
+//        DB::listen(function ($query){
+//            var_dump($query->sql);
+//        });
+
     }
 
     /**
