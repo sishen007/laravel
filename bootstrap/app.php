@@ -10,7 +10,9 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
-
+/**
+ * Application 中会registe一些服务
+ */
 $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );

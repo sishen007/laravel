@@ -55,6 +55,6 @@ $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
 
-$response->send();
+$response->send();//处理请求 + 返回数据
 
 $kernel->terminate($request, $response);
